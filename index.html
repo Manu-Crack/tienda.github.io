@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Artículos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a nuestra Tienda de Artículos</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                <li><a href="#productos" onclick="mostrarSeccion('productos')">Productos</a></li>
+                <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+                <li><a href="#carrito" onclick="mostrarSeccion('carrito')">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <div class="contenedor-secciones">
+        <!-- Sección Inicio -->
+        <section id="inicio" class="seccion-activa">
+            <h2>Bienvenido a la mejor tienda de artículos de limpieza</h2>
+            <p>Aquí encontrarás productos como escobillas, escobas y cepillos de alta calidad a los mejores precios.</p>
+        <p> Descripción:
+    
+                "Tu Casa Limpia" es una tienda en línea especializada en ofrecer una amplia variedad de productos de limpieza para el hogar. Nuestro objetivo es facilitarte la tarea de mantener tu hogar impecable, proporcionándote herramientas de alta calidad y duraderas.
+                
+                ¿Qué encontrarás en nuestra tienda?
+                
+                Escobas: Desde escobas tradicionales hasta modelos innovadores con cerdas de diferentes materiales, perfectas para todo tipo de superficies.
+                Cepillos: Una amplia gama de cepillos para limpiar baños, cocinas, pisos y cualquier rincón de tu hogar.
+                Escobillas: Escobillas de baño, fregaderos y otras áreas que requieren una limpieza más detallada.
+                Accesorios de limpieza: Recogedores, cubos, trapos, paños y otros accesorios complementarios.
+                Productos de limpieza ecológicos: Opciones amigables con el medio ambiente para aquellos que buscan productos naturales y sostenibles.
+                <hr>
+                
+                <b>¿Por qué elegirnos?</b>
+                
+                Amplio catálogo: Contamos con una extensa variedad de productos para satisfacer todas tus necesidades de limpieza.
+                Marcas de calidad: Trabajamos con las mejores marcas del mercado, garantizando la durabilidad y eficacia de nuestros productos.
+                Precios competitivos: Ofrecemos precios atractivos y promociones especiales para que puedas equipar tu hogar sin gastar de más.
+                Envío rápido y seguro: Tus compras llegarán a tu domicilio de forma rápida y segura.
+                Atención al cliente personalizada: Nuestro equipo está siempre dispuesto a ayudarte y resolver cualquier duda que tengas.
+                En nuestra tienda encontrarás todo lo que necesitas para mantener tu hogar limpio y ordenado. ¡Explora nuestro catálogo y descubre las mejores opciones para ti!
+                
+                [Insertar imagen de productos de limpieza]
+                
+                [Insertar llamada a la acción, por ejemplo: "Compra ahora" o "Descubre nuestros productos"]
+                <br>
+                <hr>
+                <b>Elementos adicionales que puedes incluir:</b>
+                <br>
+                Blog: Un blog donde puedas compartir consejos de limpieza, guías de compra y otras informaciones útiles.
+                Sección de preguntas frecuentes: Para resolver las dudas más comunes de tus clientes.
+                Testimonios de clientes: Muestra lo que tus clientes piensan de tus productos y servicios.
+                Programa de fidelización: Recompensa a tus clientes más fieles. </p>
+            <img src="tienda.webp" class="tienda_fot" >
+        </section>
+    
+        <!-- Sección Productos -->
+        <section id="productos" class="seccion-oculta">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-container">
+                <div class="producto">
+                    <img src="escobilla.png" alt="Escobilla">
+                    <h3>Escobilla</h3>
+                    <p>Descripción de la escobilla</p>
+                    <p>Precio: $5.00</p>
+                    <button onclick="agregarAlCarrito('Escobilla', 5)">Agregar al carrito</button>
+                </div>
+    
+                <div class="producto">
+                    <img src="escoba.png" alt="Escoba">
+                    <h3>Escoba</h3>
+                    <p>Descripción de la escoba</p>
+                    <p>Precio: $10.00</p>
+                    <button onclick="agregarAlCarrito('Escoba', 10)">Agregar al carrito</button>
+                </div>
+    
+                <div class="producto">
+                    <img src="sepillo.png" alt="Cepillo">
+                    <h3>Cepillo</h3>
+                    <p>Descripción del cepillo</p>
+                    <p>Precio: $7.00</p>
+                    <button onclick="agregarAlCarrito('Cepillo', 7)">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion-oculta">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través del correo: ventas@tiendadelimpieza.com o llamarnos al +51 987654321.</p>
+            <p>
+                O envíanos un mensaje a WhatsApp haciendo clic en el siguiente enlace:
+                <a href="https://wa.me/51987654321" target="_blank">Enviar mensaje a WhatsApp</a>
+            </p>
+        </section>
+    
+        <!-- Sección Carrito -->
+        <section id="carrito" class="seccion-oculta">
+            <h2>Carrito de Compras</h2>
+            <div id="lista-carrito">
+                <p>No hay productos en el carrito.</p>
+            </div>
+            <h3>Total: $<span id="total">0.00</span></h3>
+            <button id="btn-confirmar" onclick="confirmarCompra()">Confirmar Compra</button>
+            <button id="btn-limpiar" onclick="limpiarCarrito()">Limpiar Carrito</button>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Artículos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-image: url('fondo.webp');
+}
+
+header {
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  color: black;
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+h1, h2 {
+  text-align: center;
+  color:white;
+  text-shadow: 0px 0px 10px hwb(194 46% 27%),
+               0px 0px 20px hwb(194 46% 27%),
+               0px 0px 40px hwb(194 46% 27%),
+               0px 0px 80px hwb(194 46% 27%);
+}
+
+.productos-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+/* Estilos para la sección del carrito */
+#carrito {
+  background-color: white; /* Fondo blanco para el carrito */
+  border: 1px solid #ddd; /* Bordes ligeros */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Espaciado interno */
+  max-width: 400px; /* Ancho máximo */
+  margin: 20px auto; /* Centrar el carrito horizontalmente */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+.contenedor-secciones {
+  background-color: white; /* Fondo blanco para el contenedor */
+  border: 1px solid #ddd; /* Borde del contenedor */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Espaciado interno */
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 20px auto; /* Centrar el contenedor en la página */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#lista-carrito {
+  margin-bottom: 15px; /* Espaciado debajo de la lista del carrito */
+}
+
+button {
+  background-color: #007bff; /* Color del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Esquinas redondeadas en los botones */
+  padding: 10px 15px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+  font-size: 16px; /* Tamaño de la fuente */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+.producto {
+  border: 2px solid white;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* Para Safari */
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 15%;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para ocultar y mostrar secciones */
+.seccion-oculta {
+  display: none;
+  text-align: center;
+}
+
+.seccion-activa {
+  display: block;
+  text-align: justify;
+}
+
+.tienda_fot{
+  text-align: center;
+  width: 20%;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
